@@ -5,7 +5,7 @@ import '../../style';
 export const BannerWrapper = styled.div`
     background:#1f1f1f;
     width:100%;
-    height:800px;
+    height:600px;
     font-family:'Poppins','Helvetica',sans-serif;
     position:relative;
     padding-top:${props=>props.fix?'150px':'0px'};
