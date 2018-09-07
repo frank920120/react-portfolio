@@ -5,10 +5,10 @@ import '../../style';
 export const HeaderWrapper = styled.div`
 
 background:#1f1f1f;
-width:100%;
 height:80px;
 padding:0;
 margin:0;
+display:${props=>props.fix?'none':'block'};
 
 
 
@@ -22,6 +22,11 @@ width:100%;
 margin:0 auto;
 display:flex;
 justify-content:space-around;
+padding-bottom:${props=>props.fix?'0px':'100px'}; 
+position:${props=>props.fix?'fixed':'relative'};  
+top:0;  
+z-index:9999;
+opacity:${props=>props.fix?'0.9':'1.0'};
 
 `
 
@@ -30,16 +35,17 @@ export const NavIcon = styled.a.attrs({
 
 })`
     color: #fff;
-    font-size: 25px;
+    font-size: ${props=>props.fix?'50px':'40px'};
     font-weight: 700;
-    letter-spacing: .75px;
+    letter-spacing: 2px;
     padding:0;
     margin:0;
     text-decoration:none;
+    transition:.5s ease all;
 
 `
 export const MenuWrapper = styled.div`
-width:350px;
+width:500px;
 display:flex;
 justify-content:space-around;
 
@@ -51,6 +57,7 @@ export const MenuItem = styled.a.attrs({
     href :'/'
 })`
     text-decoration:none;
+    display:block;
     color:white;
     font-weight:100;
    padding:15px;

@@ -9,7 +9,8 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     box-sizing:border-box;
-    margin:0;
+	margin:0;
+	position:relative;
 }
 ol, ul {
 	list-style: none;
