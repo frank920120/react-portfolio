@@ -18,6 +18,7 @@ text-align:left;
 transform:${props=>props.load?'translateX(0px)':'translateX(-250px)'};
 opacity:${props=>props.load?'1':'0'};
 transition:1.5s ease-in-out;
+position:relative;
 `
 
 export const BannerHead = styled.h1`
@@ -30,7 +31,6 @@ export const BannerHead = styled.h1`
     padding: 0;
     margin:0;
     padding-bottom:50px;
-    position:relative;
     padding-left:50px;
 `
 
@@ -42,9 +42,22 @@ export const BannerText = styled.h2`
     letter-spacing: 1.78px;
     font-weight: 400;
     padding: 0;
-
+    position:relative;
+    padding-bottom:50px;
 
 `
+export const Redline = styled.div`
+
+    background:#ed6464;
+    position:absolute;
+    width:250px;
+    height:7px;
+    bottom: 0;
+    left:0;
+   
+`
+
+
 export const SocialMediaCover = styled.div`
 
 position:absolute;
@@ -53,8 +66,8 @@ height:100px;
 display:flex;
 flex-direction:column;
 justify-content:space-between;
-left:10px;
-top:20px;
+left:0;
+top:140px;
 
 `
 
@@ -74,3 +87,4 @@ height:20px;
 
 
 `
+

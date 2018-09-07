@@ -1,5 +1,5 @@
 import React, { Component,Fragment } from 'react';
-import {BannerWrapper,BannerSection,BannerHead,BannerText,SocialMedia,SocialMediaCover,SocialMediaIcon} from './style';
+import {BannerWrapper,BannerSection,BannerHead,BannerText,SocialMedia,SocialMediaCover,SocialMediaIcon,Redline} from './style';
 import EmailIcon from '../../statics/email.svg';
 import GitIcon from '../../statics/github-logo.svg';
 import Linkin from '../../statics/linkin.svg';
@@ -35,7 +35,6 @@ componentDidMount() {
 
         })
 
-
     });
 
   }
@@ -62,9 +61,11 @@ componentDidMount() {
                 </SocialMediaCover>
 
                     </BannerHead>
-                    <BannerText>HTML5 | CSS3 | JavaScript | ReactJS,Redux,styled-components | WordPress | PHP | MySQL | Git | Balsamiq | InVision | Photoshop</BannerText>
+                    <BannerText>HTML5 | CSS3 | JavaScript | ReactJS,Redux,styled-components | WordPress | PHP | MySQL | Git | Balsamiq | InVision | Photoshop
+                    <Redline></Redline>
+                    </BannerText>
                 </BannerSection>
-             
+            
             </BannerWrapper>
 
 
