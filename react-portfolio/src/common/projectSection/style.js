@@ -4,14 +4,14 @@ import '../../style';
 export const ProjectWrapper = styled.div`
 
 width:100%;
-height:1000px;
+height:auto;
 background:#1f1f1f;
 font-family:'Poppins','Helvetica',sans-serif;
 
 
 `
 export const ProjectHeadWrapper = styled.div`
-width:65%;
+width:900px;
 position:relative;
 height:160px;
 
@@ -47,12 +47,13 @@ position:absolute;
 `
 
 export const ProjectContent = styled.div`
-width:70%;
+width:80%;
 display:grid;
-grid-template-columns:1fr 1fr 1fr;
+grid-template-columns:1fr 1fr;
 grid-gap:30px;
 margin:0 auto;
 margin-top:100px;
+padding-bottom:100px;
 
 
 `
@@ -60,43 +61,109 @@ margin-top:100px;
 export const ProjectItems = styled.div`
 
 display:block;
-height:300px;
-width:300px;
+width:100%;
 margin:0 auto;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 overflow:hidden;
+border-radius:10px;
 position:relative;
 `
 
 export const ProjectImg = styled.img`
-    display:block;
+    display:block; 
+    width:100%;
     cursor: pointer;
-    object-fit:cover;
-    transition:1s ease-in-out all;
-
-    &:hover{
-
-        transform:scale(1.2,1.2);
-
-    }
+    object-fit:contain;
     
 `
 
 export const ImgCover = styled.div`
-    width:300px;
-    height:300px;
+display:block;
+    width:100%;
+    height:100%;
     position:absolute ;
     top:0;
     left:0;
-    background:rgba(0,0,0,0.7);
+    background:rgba(0,0,0,0.9);
     z-index:1;
-    transform: scale(0);
-    transition:0.5s ease-in-out all;
+    opacity:0;
+    transition:0.5s linear;
+
+  
 &.cover {
 
-    transform: scale(1);
+   opacity:1;
+
+
+}
+`
+export const ProjectTitle = styled.h1`
+color:white;
+z-index:999;
+text-align:center;
+font-size:40px;
+border-bottom: 6px solid #ED6464;
+width:90%;
+margin:0 auto;
+margin-bottom:50px;
+margin-top:20px;
+
+
+
+
+`
+
+export const ProjectIntro = styled.p`
+color:white;
+font-size:20px;
+width:80%;
+margin:0 auto;
+text-align:center;
+letter-spacing:1px;
+line-height: 1.6;
+
+`
+
+
+export const ProjectSkill = styled.p`  
+position:absolute;
+bottom:100px;
+color:#ED6464;
+transform:translate(-50%,-50%);
+left:50%;
+text-align:center;
+
+`
+
+export const ProjectButton = styled.a`
+color:white;
+background:#ED6464;
+padding:10px;
+text-decoration:none;
+position: absolute;
+bottom:10px;
+transform:translate(-50%,-50%);
+left:50%;
+cursor:pointer;
+border-radius:5px;
+outline:none;
+
+&:hover {
+
+opacity:0.7;
 
 
 }
 `
 
+export const Redline = styled.div`
+
+    background:#ed6464;
+
+    width:250px;
+    height:7px;
+    bottom: 0;
+   margin-left:130px;
+   
+   
+`
