@@ -27,9 +27,9 @@ class ProjectSection  extends Component{
                 'This is my current portfolio page which includes all my projects that I have done so far.'
                 ],
             ProjectSkill:[
-                'Html | Scss | Javascript | Jquery',
-                'Html | Scss | Javascript | Jquery | Php | Mysql | Photoshop | XD',
-                'Angular | Angular Router | Ajax | OpenWeatherMap API | CSS3',
+                'Html | Scss | Javascript | Jquery | Responsive',
+                'Html | Scss | Javascript | Jquery | Php | Mysql | Photoshop | XD | Responsive',
+                'Angular | Angular Router | Ajax | OpenWeatherMap API | CSS3 | Responsive',
                 'ReactJS | Styled-components | Photoshop |'
         
         ]

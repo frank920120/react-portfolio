@@ -23,7 +23,7 @@ position:relative;
 
 export const BannerHead = styled.h1`
     color: #fff;
-    font-size: 60px;
+    font-size: 5vw;
     line-height: 87px;
     letter-spacing: 5.83px;
     font-weight: 700;
@@ -37,7 +37,7 @@ export const BannerHead = styled.h1`
 export const BannerText = styled.h2`
 
     color: #fff;
-    font-size: 16px;
+    font-size: 1.4vw;
     line-height: 27px;
     letter-spacing: 1.78px;
     font-weight: 400;

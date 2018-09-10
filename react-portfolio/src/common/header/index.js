@@ -32,9 +32,9 @@ this.state = {
                     <HomeNav fix={this.state.scroll}>
                         <NavIcon fix={this.state.scroll}>JUN FANG</NavIcon>
                         <MenuWrapper>
-                            <MenuItem>About Me</MenuItem>
                             <MenuItem>Projects</MenuItem>
-                            <MenuItem>Education</MenuItem>
+                            <MenuItem>About Me</MenuItem>
+                            <MenuItem>My Skill</MenuItem>
                             <MenuItem className='Highlight'>Contact</MenuItem>
                         </MenuWrapper>
                     </HomeNav>

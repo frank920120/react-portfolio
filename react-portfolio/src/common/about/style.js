@@ -55,6 +55,7 @@ display:flex;
 width:90%;
 margin:0 auto;
 flex:1;
+padding-bottom:100px;
 `
 
 export const AboutLeft = styled.div`
@@ -68,7 +69,7 @@ width:50%;
 object-fit:contain;
 height:auto;
 display:block;
-
+padding:10px;
 transform:${props=>props.fadein?'translateX(0)':'translatex(100%)'};
 opacity:${props=>props.fadein?1:0};
 transition:1s all linear ; 
@@ -88,4 +89,22 @@ export const AboutIntro = styled.p`
 
 
 
+`
+
+export const Highlight = styled.span`
+
+    color:#ED6464;
+
+
+` 
+export const Redline = styled.div`
+
+    background:#ed6464;
+
+    width:250px;
+    height:7px;
+    bottom: 0;
+   margin-left:130px;
+   
+   
 `

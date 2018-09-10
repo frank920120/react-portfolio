@@ -1,5 +1,6 @@
-import React, { Component,Fragment } from 'react';
-import {AboutWrapper,AboutHeadWrapper,AboutHead,AboutText,AboutContent,AboutLeft,AboutRight,AboutIntro} from './style';
+import React, { Component } from 'react';
+import {AboutWrapper,AboutHeadWrapper,AboutHead,AboutText,
+    AboutContent,AboutLeft,AboutRight,AboutIntro,Highlight,Redline} from './style';
 import Selfi from '../../statics/selfi.jpg';
 class AboutMe extends Component {
 
@@ -42,13 +43,14 @@ class AboutMe extends Component {
                     </AboutHeadWrapper>
                     <AboutContent>
                         <AboutLeft>
-                            <AboutIntro>My name is JUN FANG , I am from China ,and I am a front-end web developer.I graduated from the British Columbia Institution of Technology, Technical Web Designer Program. This program teaches hands-on and up-to-date web technologies with structured projects and industry experiences.  </AboutIntro>
-                            <AboutIntro>I am a lifelong learner because I love learning new things. I always seek out new technologies, improve my skills, and stay up-to-date on industry trends and achievements.</AboutIntro>
-                            <AboutIntro> I do web design and web development for solving people’s problems and creating amazing features with web design and web development is incredibly rewarding. </AboutIntro>
-                            <AboutIntro>My source of inspiration comes from everything I see around me; it helps me to design state-of-the-art and user-friendly web and mobile interfaces.</AboutIntro>
+                            <AboutIntro>My name is JUN FANG , I am from China ,and I am a <Highlight>front-end web developer</Highlight>.I graduated from the British Columbia Institution of Technology, Technical Web Designer Program. This program teaches hands-on and up-to-date web technologies with structured projects and industry experiences.  </AboutIntro>
+                            <AboutIntro>I am a <Highlight>lifelong learner</Highlight> because I love learning new things. I always seek out new technologies, improve my skills, and stay up-to-date on industry trends and achievements.</AboutIntro>
+                            <AboutIntro> I do <Highlight>web design and web development </Highlight>for solving people’s problems and creating amazing features with web design and web development is incredibly rewarding. </AboutIntro>
+                            <AboutIntro>My source of <Highlight>inspiration</Highlight> comes from everything I see around me; it helps me to design state-of-the-art and user-friendly web and mobile interfaces.</AboutIntro>
                         </AboutLeft>
                         <AboutRight src={Selfi}  fadein={this.state.ImageScroll}/>
                     </AboutContent>
+                    <Redline></Redline>
                 </AboutWrapper>
 
             )

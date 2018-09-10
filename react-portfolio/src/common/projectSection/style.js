@@ -84,7 +84,7 @@ display:block;
     position:absolute ;
     top:0;
     left:0;
-    background:rgba(0,0,0,0.9);
+    background:rgba(0,0,0,1);
     z-index:1;
     opacity:0;
     transition:0.5s linear;
@@ -115,7 +115,7 @@ margin-top:20px;
 
 export const ProjectIntro = styled.p`
 color:white;
-font-size:20px;
+font-size:1.3vw;
 width:80%;
 margin:0 auto;
 text-align:center;
@@ -127,11 +127,12 @@ line-height: 1.6;
 
 export const ProjectSkill = styled.p`  
 position:absolute;
-bottom:100px;
+bottom:10%;
 color:#ED6464;
 transform:translate(-50%,-50%);
 left:50%;
 text-align:center;
+line-height:25px;
 
 `
 
@@ -141,8 +142,9 @@ background:#ED6464;
 padding:10px;
 text-decoration:none;
 position: absolute;
-bottom:10px;
+bottom:2%;
 transform:translate(-50%,-50%);
+transition:1s ease;
 left:50%;
 cursor:pointer;
 border-radius:5px;
