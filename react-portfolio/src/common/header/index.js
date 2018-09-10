@@ -34,8 +34,7 @@ this.state = {
                         <MenuWrapper>
                             <MenuItem>Projects</MenuItem>
                             <MenuItem>About Me</MenuItem>
-                            <MenuItem>My Skill</MenuItem>
-                            <MenuItem className='Highlight'>Contact</MenuItem>
+                            <MenuItem className='Highlight'>My Skills</MenuItem>
                         </MenuWrapper>
                     </HomeNav>
             </Fragment>

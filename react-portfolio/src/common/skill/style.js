@@ -10,6 +10,7 @@ height:auto;
 background:#1f1f1f;
 font-family:'Poppins','Helvetica',sans-serif;
 padding-top:150px;
+margin-bottom:300px;
 
 `
 export const SkillHeadWrapper = styled.div`

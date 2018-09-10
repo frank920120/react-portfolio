@@ -4,6 +4,7 @@ import HomeBanner from './common/banner';
 import ProjectSection from './common/projectSection';
 import AboutMe from './common/about';
 import MySkill from './common/skill';
+import Footer from './common/footer';
 class App extends Component {
   render() {
     return (
@@ -13,6 +14,7 @@ class App extends Component {
      <ProjectSection/>
      <AboutMe/>
      <MySkill/>
+     <Footer/>
      </Fragment>
     );
   }

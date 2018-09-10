@@ -11,6 +11,7 @@ body {
     box-sizing:border-box;
 	margin:0;
 	position:relative;
+	overflow-x: hidden; 
 }
 ol, ul {
 	list-style: none;
