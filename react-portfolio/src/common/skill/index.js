@@ -54,7 +54,7 @@ class MySkill extends Component{
 
             return (
 
-                <SkillWrapper ref={el=>this.container=el}>
+                <SkillWrapper ref={el=>this.container=el} id='skill'>
                     <SkillHeadWrapper>
                             <SkillHead>My SkillS</SkillHead>
                             <SkillText>The programming skills that I have learned.</SkillText>

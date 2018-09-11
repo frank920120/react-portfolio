@@ -107,7 +107,7 @@ class ProjectSection  extends Component{
 
             return (
 
-             <ProjectWrapper>
+             <ProjectWrapper id='project'>
                     <ProjectHeadWrapper>
                     <ProjectHead>Projects</ProjectHead>
                     <ProjectHeadText>Case studies of previous Web devloperment work. </ProjectHeadText>

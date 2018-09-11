@@ -42,7 +42,7 @@ this.handleScroll=this.handleScroll.bind(this);
 
             return(
 
-                <AboutWrapper ref={el=>this.container=el}>
+                <AboutWrapper ref={el=>this.container=el} id='about'>
                     <AboutHeadWrapper>
                         <AboutHead>ABOUT ME</AboutHead>
                         <AboutText>The man,the myth,the developer</AboutText>

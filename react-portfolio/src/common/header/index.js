@@ -1,6 +1,6 @@
 import React, { Component,Fragment } from 'react';
-import {HeaderWrapper,HomeNav,NavIcon,MenuWrapper,MenuItem} from './style';
-
+import {HeaderWrapper,HomeNav,NavIcon,MenuWrapper} from './style';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 class Header extends Component{
 constructor(props){
 super(props);
@@ -9,17 +9,23 @@ this.state = {
     scroll : false
 }
 
+this.handScroll = this.handScroll.bind(this);
+
 }
     componentDidMount() {
-        window.addEventListener('scroll', ()=>{
+        window.addEventListener('scroll',this.handScroll);
 
-                var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-            this.setState({
+      }
 
-                 scroll : (scrollTop>80)
 
-            })       
-        });
+      handScroll(){
+          var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+        this.setState({
+
+             scroll : (scrollTop>80)
+
+        })       
+    
 
 
       }
@@ -32,9 +38,9 @@ this.state = {
                     <HomeNav fix={this.state.scroll}>
                         <NavIcon fix={this.state.scroll}>JUN FANG</NavIcon>
                         <MenuWrapper>
-                            <MenuItem>Projects</MenuItem>
-                            <MenuItem>About Me</MenuItem>
-                            <MenuItem className='Highlight'>My Skills</MenuItem>
+                            <AnchorLink href='#project'>Projects</AnchorLink>
+                            <AnchorLink href='#about'>About Me</AnchorLink>
+                            <AnchorLink href='#skill' className='Highlight'>My Skills</AnchorLink>
                         </MenuWrapper>
                     </HomeNav>
             </Fragment>

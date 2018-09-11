@@ -49,14 +49,9 @@ width:500px;
 display:flex;
 justify-content:space-around;
 
+a{
 
-`
-
-
-export const MenuItem = styled.a.attrs({
-    href :'/'
-})`
-    text-decoration:none;
+   text-decoration:none;
     display:block;
     color:white;
     font-weight:100;
@@ -71,4 +66,7 @@ export const MenuItem = styled.a.attrs({
     opacity:0.8;
 }
 
+}
 `
+
+
