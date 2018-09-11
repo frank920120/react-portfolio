@@ -15,9 +15,6 @@ export const BannerSection =styled.section`
 width:80%;
 margin:0 auto;
 text-align:left;
-transform:${props=>props.load?'translateX(0px)':'translateX(-250px)'};
-opacity:${props=>props.load?'1':'0'};
-transition:1.5s ease-in-out;
 position:relative;
 `
 
@@ -32,6 +29,7 @@ export const BannerHead = styled.h1`
     margin:0;
     padding-bottom:50px;
     padding-left:50px;
+  
 `
 
 export const BannerText = styled.h2`

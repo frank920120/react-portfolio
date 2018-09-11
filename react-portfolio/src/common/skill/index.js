@@ -93,7 +93,7 @@ class MySkill extends Component{
                           }  
                     </SkillContentWrapper>
 
-
+               
                 </SkillWrapper>
 
 

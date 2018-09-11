@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import {FooterWrapper,ContactWrapper,ContactInfo,SocialMediaWrapper,SocialMediaItem,SocialMediaItemLink} from './style';
+import {FooterWrapper,ContactWrapper,ContactInfo,SocialMediaWrapper,SocialMediaItem,SocialMediaItemLink,TextSpan} from './style';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import EmailIcon from '../../statics/email.svg';
 import GitIcon from '../../statics/github-logo.svg';
 import Linkin from '../../statics/linkin.svg';
+
 
 class Footer extends Component{
 
@@ -21,9 +23,9 @@ class Footer extends Component{
                 <FooterWrapper>
                         <ContactWrapper>
                         <ContactInfo className='ContactHeader'>Contact Me:</ContactInfo>
-                            <ContactInfo>Mobile :+1-778-926-8636</ContactInfo>
-                            <ContactInfo>Wechat :hainan920120</ContactInfo>
-                            <ContactInfo>Email  :frankfang2014@hotmail.com</ContactInfo>    
+                            <ContactInfo><i class="fas fa-mobile-alt"></i>  Mobile:<TextSpan> 1-778-926-8636</TextSpan></ContactInfo>
+                            <ContactInfo><i class="fab fa-weixin"></i> Wechat:<TextSpan> hainan42</TextSpan></ContactInfo>
+                            <ContactInfo><i class="far fa-envelope"></i>  Email:<TextSpan> frankfang2014@hotmail.com</TextSpan></ContactInfo>    
                         </ContactWrapper>
                     <SocialMediaWrapper>
                     {

@@ -7,7 +7,7 @@ background:#151515;
 height:300px;
 width:100%;
 display:flex;
-justify-content:space-between;
+justify-content:space-around;
 position:fixed;
 bottom:0 ;
 z-index:-1;
@@ -28,11 +28,11 @@ export const ContactInfo = styled.h3`
 
 margin:0;
 color:#fff;
-font-size:25px;
+font-size:20px;
 line-height:70px;
 &.ContactHeader{
     color:#ed6464;
-    font-size:40px;
+    font-size:30px;
 
 
 }
@@ -52,8 +52,22 @@ display:block;
 
 `
 export const SocialMediaItem = styled.img`
-width:40px;
-height:40px;
+width:30px;
+height:30px;
 display:block;
+
+&:hover{
+
+color:white;
+
+
+}
+
+`
+
+export const TextSpan =styled.span`
+
+font-size:15px;
+font-weight:400;
 
 `
