@@ -183,4 +183,11 @@ cursor:pointer;
 margin-bottom:100px;
 border-radius:5px;
 border:1px solid white;
+
+&:hover{
+
+    opacity:0.8;
+
+
+}
 `
