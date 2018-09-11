@@ -1,4 +1,5 @@
-import React, { Component,Fragment } from 'react';
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import {SkillWrapper,SkillHeadWrapper,SkillHead,SkillText,
     SkillContent,SkillContentWrapper,SkillLogo,SkillTitle,SkillSelf,SkillSubtitle,
     SkillDescribe,SkillToolTitle,SkilTool,SkillToolItem} from './style';
@@ -19,15 +20,41 @@ class MySkill extends Component{
            ToolList:[
                ['Invision','PhotoShop','XD','Balsamiq'],
                ['Visual Studio Code','GitHub','Bootstrap','CodePen']
-            ]
+            ],
+            ImageScroll : false,
+            scrollTop : null
         }
+        this.handleScroll=this.handleScroll.bind(this);
     }
 
+
+    componentDidMount(){
+        window.addEventListener('scroll',this.handleScroll);
+
+    }
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+      }
+    
+
+    handleScroll(){
+        const node = ReactDOM.findDOMNode(this.container);
+
+        this.setState({
+            scrollTop:document.body.scrollTop || document.documentElement.scrollTop
+
+        },this.setState({
+
+            ImageScroll : (this.state.scrollTop>node.offsetTop-200)
+
+        }))
+      
+    }
     render(){
 
             return (
 
-                <SkillWrapper>
+                <SkillWrapper ref={el=>this.container=el}>
                     <SkillHeadWrapper>
                             <SkillHead>My SkillS</SkillHead>
                             <SkillText>The programming skills that I have learned.</SkillText>
@@ -40,7 +67,7 @@ class MySkill extends Component{
 
                     return(
                                
-                    <SkillContent>
+                    <SkillContent scroll={this.state.ImageScroll} key={index}>
                         <SkillLogo src={item}/>
                         <SkillTitle>{this.state.title[index]}</SkillTitle>
                         <SkillSelf>{this.state.self[index]}</SkillSelf>
@@ -52,7 +79,7 @@ class MySkill extends Component{
 
                             return (
 
-                                <SkillToolItem>{list}</SkillToolItem>
+                                <SkillToolItem key={index}>{list}</SkillToolItem>
                             ) 
                             })}
                         

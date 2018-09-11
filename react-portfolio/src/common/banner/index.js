@@ -1,4 +1,4 @@
-import React, { Component,Fragment } from 'react';
+import React, { Component } from 'react';
 import {BannerWrapper,BannerSection,BannerHead,BannerText,SocialMedia,SocialMediaCover,SocialMediaIcon,Redline} from './style';
 import EmailIcon from '../../statics/email.svg';
 import GitIcon from '../../statics/github-logo.svg';
@@ -51,7 +51,7 @@ componentDidMount() {
                    {
                        this.state.url.link.map((item,index)=>{
                             return (
-                                <SocialMedia href={item}>
+                                <SocialMedia key={index} href={item}>
                                     <SocialMediaIcon src={this.state.url.socialicon[index]}></SocialMediaIcon>
                                 </SocialMedia>
                             )

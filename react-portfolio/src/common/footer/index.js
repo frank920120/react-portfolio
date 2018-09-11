@@ -29,7 +29,7 @@ class Footer extends Component{
                     {
                        this.state.url.link.map((item,index)=>{
                             return (
-                                <SocialMediaItemLink href={item}>
+                                <SocialMediaItemLink key={index} href={item}>
                                     <SocialMediaItem src={this.state.url.socialicon[index]}></SocialMediaItem>
                                 </SocialMediaItemLink>
                             )

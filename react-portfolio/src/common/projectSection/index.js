@@ -1,8 +1,8 @@
-import React, { Component,Fragment } from 'react';
+import React, { Component } from 'react';
 import {ProjectWrapper,ProjectHead,ProjectHeadText,
     ProjectHeadWrapper,ProjectContent,ProjectItems,
     ProjectImg,ImgCover,ProjectTitle,ProjectIntro,
-    ProjectSkill,ProjectButton,Redline} from './style';
+    ProjectSkill,ProjectButton,Redline,ShowMore} from './style';
 
 import china from '../../statics/china.png';
 import tspace from '../../statics/tspace.png';
@@ -32,12 +32,56 @@ class ProjectSection  extends Component{
                 'Angular | Angular Router | Ajax | OpenWeatherMap API | CSS3 | Responsive',
                 'ReactJS | Styled-components | Photoshop |'
         
-        ]
+        ],
+        limit:2,
+        maxiumLimit:false
         }
 
+        this.ShowHandle = this.ShowHandle.bind(this);
+        this.LessHandle = this.LessHandle.bind(this);
     }
+    ShowHandle(){
 
- 
+        this.setState((prevState)=>{
+          
+          return {limit :prevState.limit+2}
+          
+        },()=>{
+
+            if(this.state.limit>=4){
+
+                this.setState({
+  
+                 maxiumLimit:true
+  
+  
+                })
+          }
+        })
+
+    }
+    LessHandle(){
+
+
+        this.setState((prevState)=>{
+
+
+            return {limit :prevState.limit-2}
+
+
+        },()=>{
+            window.scrollTo(0,window.scrollY-600);
+            if(this.state.limit<=2){
+            this.setState({
+                limit:2,
+                maxiumLimit:false
+                
+               })
+            }
+        })
+
+
+    }
     handleHover(i){
         const items =[...this.state.isHover];
         items[i]=true;
@@ -70,7 +114,7 @@ class ProjectSection  extends Component{
                     </ProjectHeadWrapper>
                 <ProjectContent>
                 {
-                        this.state.imgUrl.map((item,index)=>{
+                        this.state.imgUrl.slice(0,this.state.limit).map((item,index)=>{
 
 
                         return   ( <ProjectItems onMouseOver={this.handleHover.bind(this,index)}  key={index}  >
@@ -87,9 +131,9 @@ class ProjectSection  extends Component{
 
                         })
                     }
-                    
+                
                 </ProjectContent>
-                 
+                <ShowMore onClick={this.state.maxiumLimit?this.LessHandle:this.ShowHandle}>{this.state.maxiumLimit?'ShowLess':'ShowMore'}</ShowMore>
 
                 <Redline></Redline>
              </ProjectWrapper>

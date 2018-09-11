@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import {AboutWrapper,AboutHeadWrapper,AboutHead,AboutText,
     AboutContent,AboutLeft,AboutRight,AboutIntro,Highlight,Redline} from './style';
 import Selfi from '../../statics/selfi.jpg';
@@ -8,35 +9,40 @@ class AboutMe extends Component {
         super(props);
         this.state = {
 
-            ImageScroll : false
+            ImageScroll : false,
+            scrollTop:null
 
         }
-
+this.handleScroll=this.handleScroll.bind(this);
     }
 
     componentDidMount(){
-        window.addEventListener('scroll', ()=>{
-
-            var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-        this.setState({
-
-            ImageScroll : (scrollTop>2000)
-
-        })
-    });
-
-
-
+        window.addEventListener('scroll',this.handleScroll);
 
     }
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+      }
+    
 
+    handleScroll(){
+        const node = ReactDOM.findDOMNode(this.container);
 
+        this.setState({
+            scrollTop:document.body.scrollTop || document.documentElement.scrollTop
 
+        },this.setState({
+
+            ImageScroll : (this.state.scrollTop>node.offsetTop-200)
+
+        }))
+      
+    }
     render(){
 
             return(
 
-                <AboutWrapper>
+                <AboutWrapper ref={el=>this.container=el}>
                     <AboutHeadWrapper>
                         <AboutHead>ABOUT ME</AboutHead>
                         <AboutText>The man,the myth,the developer</AboutText>

@@ -169,3 +169,18 @@ export const Redline = styled.div`
    
    
 `
+
+export const ShowMore = styled.a`
+
+background:#ed6464;
+color:#fff;
+padding:10px;
+text-align:center;
+display:block;
+width:150px;
+margin:0 auto;
+cursor:pointer;
+margin-bottom:100px;
+border-radius:5px;
+border:1px solid white;
+`

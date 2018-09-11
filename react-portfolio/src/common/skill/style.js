@@ -11,6 +11,7 @@ background:#1f1f1f;
 font-family:'Poppins','Helvetica',sans-serif;
 padding-top:150px;
 margin-bottom:300px;
+padding-bottom:100px;
 
 `
 export const SkillHeadWrapper = styled.div`
@@ -66,6 +67,9 @@ padding:30px;
 display:flex;
 flex-direction:column;
 justify-content:space-between;
+transform:${props=>props.scroll?'translateX(0)':'translateX(100%)'};
+opacity:${props=>props.scroll?1:0};
+transition:1s ease all;
 `
 
 export const SkillLogo = styled.img`
