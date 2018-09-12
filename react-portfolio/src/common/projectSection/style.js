@@ -133,13 +133,14 @@ transform:translate(-50%,-50%);
 left:50%;
 text-align:center;
 line-height:25px;
+width:80%;
 
 `
 
 export const ProjectButton = styled.a`
 color:white;
 background:#ED6464;
-padding:10px;
+padding:7px;
 text-decoration:none;
 position: absolute;
 bottom:2%;

@@ -20,18 +20,18 @@ class ProjectSection  extends Component{
             isHover : [false,false,false,false],
             projectTitle : ['Country Project','Virtual Business Project','Weather forecast','Current portfolio'],
             projectIntro : [
-                'China is a single page, responsive website for introducing China. The objective of this website project is to deliver general information about China with an eye-catching design. ',
-                'T-space is a Virtual Business page, The objective of this website is to sell watches,glasses, and headphones.  ',
-                'The weather forecast is a single page, Users are able to Search the weathers for all the countries, and they also can switch the temperature between Fahrenheit degree and Centigrade degree. ', 
+                'China is a single page, responsive website for introducing China. ',
+                'T-space is a Virtual Business page. ',
+                'The weather forecast is a single page, Users are able to Search the weathers for all the countries.', 
                 'This is my current portfolio page which includes all my projects that I have done so far.'
                 ],
-        //     ProjectSkill:[
-        //         'Html | Scss | Javascript | Jquery | Responsive',
-        //         'Html | Scss | Javascript | Jquery | Php | Mysql | Photoshop | XD | Responsive',
-        //         'Angular | Angular Router | Ajax | OpenWeatherMap API | CSS3 | Responsive',
-        //         'ReactJS | Styled-components | Photoshop |'
+            ProjectSkill:[
+                'Html | Scss | Javascript | Jquery | Responsive',
+                'Html | Scss | Javascript | Jquery | Php | Mysql | Photoshop | XD | Responsive',
+                'Angular | Angular Router | Ajax | OpenWeatherMap API | CSS3 | Responsive',
+                'ReactJS | Styled-components | Photoshop |'
         
-        // ],
+        ],
         limit:2,
         maxiumLimit:false
         }
@@ -125,7 +125,7 @@ class ProjectSection  extends Component{
                                 <ImgCover onMouseOut={this.handleLeave.bind(this,index)} className={this.state.isHover[index]?'cover':""}>
                                     <ProjectTitle>{this.state.projectTitle[index]}</ProjectTitle>
                                     <ProjectIntro>{this.state.projectIntro[index]}</ProjectIntro>
-                                    {/* <ProjectSkill>{this.state.ProjectSkill[index]}</ProjectSkill> */}
+                                    <ProjectSkill>{this.state.ProjectSkill[index]}</ProjectSkill>
                                     <ProjectButton>Watch Live Demo</ProjectButton>
                                 </ImgCover>
                         </ProjectItems>
