@@ -22,7 +22,7 @@ class ProjectSection  extends Component{
             projectIntro : [
                 'China is a single page, responsive website for introducing China. ',
                 'T-space is a Virtual Business page. ',
-                'The weather forecast is a single page, Users are able to Search the weathers for all the countries.', 
+                'The weather forecast is a single Angular page', 
                 'This is my current portfolio page which includes all my projects that I have done so far.'
                 ],
             ProjectSkill:[
@@ -52,7 +52,6 @@ class ProjectSection  extends Component{
                 this.setState({
   
                  maxiumLimit:true
-  
   
                 })
           }

@@ -6,6 +6,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html{
+
+	overflow-x: hidden; 
+}
 body {
 	line-height: 1;
     box-sizing:border-box;

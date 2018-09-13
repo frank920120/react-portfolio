@@ -31,12 +31,7 @@ class MySkill extends Component{
     componentDidMount(){
         window.addEventListener('scroll',this.handleScroll);
 
-    }
-    componentWillUnmount() {
-        window.removeEventListener('scroll', this.handleScroll);
-      }
-    
-
+    }   
     handleScroll(){
         const node = ReactDOM.findDOMNode(this.container);
 

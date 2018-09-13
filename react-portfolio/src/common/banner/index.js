@@ -19,6 +19,7 @@ scroll :false,
 }
 
 componentDidMount() {
+
     window.addEventListener('scroll', ()=>{
 
             var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;

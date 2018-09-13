@@ -11,6 +11,12 @@ justify-content:space-around;
 position:fixed;
 bottom:0 ;
 z-index:-1;
+@media (max-width:600px){
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  position:relative;
+}
 `
 
 
@@ -20,6 +26,7 @@ display:flex;
 flex-direction:column;
 justify-content:space-evenly;
 padding:20px;
+
 
 `
 
@@ -33,8 +40,6 @@ line-height:70px;
 &.ContactHeader{
     color:#ed6464;
     font-size:30px;
-
-
 }
 
 `
@@ -45,6 +50,10 @@ width:200px;
 display:flex;
 justify-content:space-around;
 align-items:center;
+@media (max-width:600px){
+  padding:10px;
+        
+}
 
 `
 export const SocialMediaItemLink = styled.a`

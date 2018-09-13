@@ -7,14 +7,32 @@ width:100%;
 height:auto;
 background:#1f1f1f;
 font-family:'Poppins','Helvetica',sans-serif;
-
+@media (max-width:500px){
+    padding-top:50px;
+  
+}
 
 `
 export const ProjectHeadWrapper = styled.div`
 width:900px;
 position:relative;
 height:160px;
+@media (max-width:1024px){
 
+width:800px;
+}
+@media (max-width:820px){
+    width:600px;
+        
+}
+@media (max-width:600px){
+    width:500px;
+        
+}
+@media (max-width:500px){
+    width:430px;
+    height:100px;
+}
 
 `
 export const ProjectHead = styled.h1`
@@ -32,6 +50,23 @@ export const ProjectHead = styled.h1`
     text-decoration: none;
     margin:0;
 
+    @media (max-width:1024px){
+font-size:140px;
+
+}
+
+    @media (max-width:820px){
+        font-size:100px;
+        
+}
+@media (max-width:600px){
+    font-size:80px;
+        
+}
+@media (max-width:500px){
+    font-size:60px;
+}
+
 `
 export const ProjectHeadText = styled.h2`
 position:absolute;
@@ -44,6 +79,27 @@ position:absolute;
     text-decoration: none;
     right:0;
     bottom:10px ;
+    @media (max-width:1024px){
+     
+       font-size:18px;
+}
+@media (max-width:820px){
+        font-size:15px;
+        bottom: 60px;
+        
+}
+@media (max-width:600px){
+   font-size:12px;
+    bottom:80px ;
+}
+@media (max-width:500px){
+    font-size:10px;
+   bottom:30px ;
+}
+@media (max-width:450px){
+ display:none;
+  
+}
 `
 
 export const ProjectContent = styled.div`
@@ -54,8 +110,22 @@ grid-gap:30px;
 margin:0 auto;
 margin-top:100px;
 padding-bottom:100px;
+@media (max-width:1150px){
+    grid-template-columns: 1fr;
 
+}
+@media (max-width:820px){
+    margin-top:50px;
+}
+@media (max-width:600px){
+    margin-top:40px;
+}
+@media (max-width:500px){
+    margin-top:20px;
+    width:100%;
+    grid-gap:10px;
 
+}
 `
 
 export const ProjectItems = styled.div`
@@ -67,6 +137,9 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 overflow:hidden;
 border-radius:10px;
 position:relative;
+@media (max-width:500px){
+    border-radius:0;
+}
 `
 
 export const ProjectImg = styled.img`
@@ -88,12 +161,16 @@ display:block;
     z-index:1;
     opacity:0;
     transition:0.5s linear;
-
+    @media (max-width:500px){
+    opacity:0.8;
+}
   
 &.cover {
 
    opacity:1;
-
+   @media (max-width:500px){
+    opacity:0.8;
+}
 
 }
 `
@@ -101,16 +178,26 @@ export const ProjectTitle = styled.h1`
 color:white;
 z-index:999;
 text-align:center;
-font-size:40px;
+font-size:2vw;
 border-bottom: 6px solid #ED6464;
 width:90%;
 margin:0 auto;
 margin-bottom:50px;
 margin-top:20px;
+@media (max-width:1150px){
+   font-size:50px;
 
-
-
-
+}
+@media (max-width:820px){
+   font-size:30px;
+}
+@media (max-width:600px){
+    font-size:25px;
+}
+@media (max-width:450px){
+ margin-top:10px;
+margin-bottom:20px;
+}
 `
 
 export const ProjectIntro = styled.p`
@@ -121,6 +208,16 @@ margin:0 auto;
 text-align:center;
 letter-spacing:1px;
 line-height: 1.6;
+@media (max-width:1150px){
+   font-size:15px;
+
+}
+@media (max-width:820px){
+   font-size:20px;
+}
+@media (max-width:600px){
+    font-size:15px;
+}
 
 `
 
@@ -134,6 +231,14 @@ left:50%;
 text-align:center;
 line-height:25px;
 width:80%;
+font-size:1vw;
+@media (max-width:1150px){
+   font-size:15px;
+
+}
+@media (max-width:600px){
+    font-size:12px;
+}
 
 `
 
@@ -153,8 +258,10 @@ outline:none;
 
 &:hover {
 
-opacity:0.7;
-
+opacity:0.8;
+@media (max-width:500px){
+   opacity:1;
+}
 
 }
 `
@@ -166,7 +273,7 @@ export const Redline = styled.div`
     width:250px;
     height:7px;
     bottom: 0;
-   margin-left:130px;
+    margin-left:10%;
    
    
 `

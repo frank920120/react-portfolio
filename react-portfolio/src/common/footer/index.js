@@ -23,9 +23,9 @@ class Footer extends Component{
                 <FooterWrapper>
                         <ContactWrapper>
                         <ContactInfo className='ContactHeader'>Contact Me:</ContactInfo>
-                            <ContactInfo><i class="fas fa-mobile-alt"></i>  Mobile:<TextSpan> 1-778-926-8636</TextSpan></ContactInfo>
-                            <ContactInfo><i class="fab fa-weixin"></i> Wechat:<TextSpan> hainan42</TextSpan></ContactInfo>
-                            <ContactInfo><i class="far fa-envelope"></i>  Email:<TextSpan> frankfang2014@hotmail.com</TextSpan></ContactInfo>    
+                            <ContactInfo><i className="fas fa-mobile-alt"></i>  Mobile:<TextSpan> 1-778-926-8636</TextSpan></ContactInfo>
+                            <ContactInfo><i className="fab fa-weixin"></i> Wechat:<TextSpan> hainan42</TextSpan></ContactInfo>
+                            <ContactInfo><i className="far fa-envelope"></i>  Email:<TextSpan> frankfang2014@hotmail.com</TextSpan></ContactInfo>    
                         </ContactWrapper>
                     <SocialMediaWrapper>
                     {
