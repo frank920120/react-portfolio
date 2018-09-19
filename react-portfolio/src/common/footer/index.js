@@ -19,7 +19,7 @@ class Footer extends Component{
  render(){
 
 
-        return (
+        return ( 
                 <FooterWrapper>
                         <ContactWrapper>
                         <ContactInfo className='ContactHeader'>Contact Me:</ContactInfo>
@@ -41,7 +41,7 @@ class Footer extends Component{
                     
                         </SocialMediaWrapper>
                 </FooterWrapper>
-
+               
             
 
         )

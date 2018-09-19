@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import '../../style';
+import { Link } from 'react-router-dom';
 
 export const ProjectWrapper = styled.div`
 
@@ -197,6 +198,7 @@ margin-top:20px;
 @media (max-width:450px){
  margin-top:10px;
 margin-bottom:20px;
+border-bottom:none;
 }
 `
 
@@ -242,7 +244,7 @@ font-size:1vw;
 
 `
 
-export const ProjectButton = styled.a`
+export const ProjectButton = styled(Link)`
 color:white;
 background:#ED6464;
 padding:7px;
@@ -255,7 +257,10 @@ left:50%;
 cursor:pointer;
 border-radius:5px;
 outline:none;
-
+@media (max-width:450px){
+ 
+ font-size:10px;
+}
 &:hover {
 
 opacity:0.8;

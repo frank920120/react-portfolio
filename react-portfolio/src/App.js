@@ -1,4 +1,4 @@
-import React, { Component ,Fragment} from 'react';
+import React, { Component,Fragment} from 'react';
 // import { library } from '@fortawesome/fontawesome-svg-core'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faMobileAlt,faweixin } from '@fortawesome/free-solid-svg-icons'
@@ -16,13 +16,14 @@ class App extends Component {
   
   render() {
     return (
+      
       <Fragment>
      <Header/>
      <HomeBanner/>
-     <ProjectSection/>
+    <ProjectSection/> 
      <AboutMe/>
      <MySkill/>
-     <Footer/>
+     <Footer/>   
      </Fragment>
     );
   }

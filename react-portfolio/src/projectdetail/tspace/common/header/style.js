@@ -1,23 +1,23 @@
 import styled from 'styled-components';
-import '../../style';
+import '../../../../style';
 
 
-export const HeaderWrapper = styled.div`
+// // export const HeaderWrapper = styled.div`
 
-background:#1f1f1f;
-height:80px;
-padding:0;
-margin:0;
-display:${props=>props.fix?'none':'block'};
+// // background:#1f1f1f;
+// // height:80px;
+// // padding:0;
+// // margin:0;
+// // display:fixed;
 
-@media (max-width:820px){
+// // @media (max-width:820px){
 
-display:none;
+// // display:none;
 
 
-}
+// // }
 
-`
+// `
 
 export const HomeNav = styled.div`
 
@@ -27,11 +27,12 @@ width:100%;
 margin:0 auto;
 display:flex;
 justify-content:space-around;
-padding-bottom:${props=>props.fix?'0px':'100px'}; 
-position:${props=>props.fix?'fixed':'relative'};  
+/* padding-bottom:${props=>props.fix?'0px':'100px'};  */
+padding:10px;
+position:fixed;
 top:0;  
 z-index:9999;
-opacity:${props=>props.fix?'0.9':'1.0'};
+/* opacity:${props=>props.fix?'0.9':'1.0'}; */
 @media (max-width:820px){
 
 position:relative;
@@ -151,3 +152,5 @@ z-index:999;
   
 }
 `
+
+

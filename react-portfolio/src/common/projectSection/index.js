@@ -8,7 +8,7 @@ import tspace from '../../statics/tspace.png';
 import weather from '../../statics/weather.png';
 import currentportoflio from '../../statics/currentportfolio.png';
 import Fade from 'react-reveal/Fade';
-
+import {Link} from 'react-router-dom';
 
 
 class ProjectSection  extends Component{
@@ -125,7 +125,10 @@ class ProjectSection  extends Component{
                                     <ProjectTitle>{this.state.projectTitle[index]}</ProjectTitle>
                                     <ProjectIntro>{this.state.projectIntro[index]}</ProjectIntro>
                                     <ProjectSkill>{this.state.ProjectSkill[index]}</ProjectSkill>
-                                    <ProjectButton>Watch Live Demo</ProjectButton>
+              
+                                    <ProjectButton to="/tspace">Watch Live Demo</ProjectButton>
+                                  
+                                   
                                 </ImgCover>
                         </ProjectItems>
                         </Fade>
