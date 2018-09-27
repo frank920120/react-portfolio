@@ -117,7 +117,7 @@ class ProjectSection  extends Component{
 
                         return   ( 
                         
-                            <Fade left>
+                            <Fade key={index}  left>
                         <ProjectItems onMouseOver={this.handleHover.bind(this,index)}  key={index}  >
 
                                 <ProjectImg  src={item}/>

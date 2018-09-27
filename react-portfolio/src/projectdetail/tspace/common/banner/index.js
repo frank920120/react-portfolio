@@ -36,7 +36,7 @@ class TspaceBanner extends Component{
                     {
                       this.state.skill.map((item,index)=>{
 
-                      return <DesItem>{item}</DesItem>
+                      return <DesItem key={index}>{item}</DesItem>
 
                       })      
 
@@ -55,7 +55,7 @@ class TspaceBanner extends Component{
 
                                     return (
 
-                                        <ToolListItem>
+                                        <ToolListItem key={index}>
                                             <ToolListImg src={item}></ToolListImg>
                                         </ToolListItem>
 
