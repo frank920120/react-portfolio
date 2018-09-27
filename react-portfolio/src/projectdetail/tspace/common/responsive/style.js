@@ -15,9 +15,10 @@ export const ResponsiveHeader = styled.h1`
 margin:0;
 font-family:'Poppins','Helvetica',sans-serif;
 font-size:40px;
+color:#404040;
+text-decoration: underline;
 padding:30px;
 text-align:center;
-color:#404040;
 width:100%;
 `
 
@@ -35,6 +36,7 @@ display:block;
 object-fit:contain;
 margin:0 auto;
 max-width:100%;
+padding:30px;
     &.iphoneview{
         
         grid-column:1/2;
