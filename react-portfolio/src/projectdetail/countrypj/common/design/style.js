@@ -6,7 +6,6 @@ export const DesignSectionWrapper = styled.div`
 
 font-family: "Lora",serif,serif;
 background:#e4e4e4;
-
 `
 
 export const DesignTitle=styled.h1`
@@ -25,11 +24,11 @@ justify-content:space-around;
 flex-wrap:wrap;
 align-items:flex-start;
 
-
 `
 export const DesginImg=styled.img`
 
 object-fit:contain;
 padding:30px;
+width:500px;
 
 `

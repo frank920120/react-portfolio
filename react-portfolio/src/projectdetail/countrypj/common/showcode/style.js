@@ -20,8 +20,7 @@ padding:30px;
 
 export const CodeItemWrapper = styled.div`
 display:flex;
-flex-direction:column;
-align-items:center;
+justify-content:center;
 
 `
 
@@ -30,13 +29,14 @@ font-size:30px;
 color:#404040;
 text-decoration:underline;
 padding:20px;
-margin:0;
+margin:0 ;
 
 `
 
 export const CodeItem=styled.img`
-padding:20px;
 display:block;
 object-fit:contain;
-max-width:100%
+width:40%;
+height:200px;
+margin:0 auto;
 `

@@ -14,8 +14,9 @@ class DesignSection extends Component{
                 <DesignSectionWrapper>
                         <DesignTitle>Design Section</DesignTitle>
                     <DesignImgWrapper>
-                    <DesginImg src={designabout}/>
                         <DesginImg src={designshop}/>
+                        <DesginImg src={designabout}/>
+                     
                         </DesignImgWrapper>
                 </DesignSectionWrapper>
 

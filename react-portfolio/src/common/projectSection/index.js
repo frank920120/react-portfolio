@@ -32,6 +32,7 @@ class ProjectSection  extends Component{
                 'ReactJS | Styled-components | Photoshop |'
         
         ],
+        url:['/countrypj','/tspace','/','/'],
         limit:2,
         maxiumLimit:false
         }
@@ -125,8 +126,8 @@ class ProjectSection  extends Component{
                                     <ProjectTitle>{this.state.projectTitle[index]}</ProjectTitle>
                                     <ProjectIntro>{this.state.projectIntro[index]}</ProjectIntro>
                                     <ProjectSkill>{this.state.ProjectSkill[index]}</ProjectSkill>
-              
-                                    <ProjectButton to="/tspace">Watch Live Demo</ProjectButton>
+
+                                    <ProjectButton to={this.state.url[index]}>Show More</ProjectButton>
                                   
                                    
                                 </ImgCover>

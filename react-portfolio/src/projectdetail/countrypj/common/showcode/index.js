@@ -10,7 +10,7 @@ class Showcode extends Component{
 
             <CodeWrapper>
                 <Codetitle>Show Code</Codetitle>
-                <CodeItemTitle>Search Bar Functionality</CodeItemTitle>
+                <CodeItemTitle>Slick SlideShow</CodeItemTitle>
                 <CodeItemWrapper>
                     <CodeItem src={searchscreen}/>
                     <CodeItem src={searchcode}/>
