@@ -10,7 +10,7 @@ height:auto;
 background:#1f1f1f;
 font-family:'Poppins','Helvetica',sans-serif;
 padding-top:150px;
-margin-bottom:300px;
+/* margin-bottom:300px; */
 padding-bottom:100px;
 @media (max-width:600px){
  margin-bottom:0;

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import{CodeWrapper,Codetitle,CodeItemWrapper,CodeItemTitle,CodeItem} from './style';
-import searchscreen from '../../statics/searchscreen.png';
-import searchcode from '../../statics/searchcode.png';
+import code01 from '../../statics/code01.png';
+import code02 from '../../statics/code02.png';
+import showmore from '../../statics/showmore.png';
 import bgimg from '../../statics/bg.png';
 class Showcode extends Component{
 
@@ -11,10 +12,11 @@ class Showcode extends Component{
 
             <CodeWrapper bg={bgimg}>
                 <Codetitle>Coding Tutorial</Codetitle>
-                <CodeItemTitle>Slick SlideShow</CodeItemTitle>
+                <CodeItemTitle>ShowMore & ShowLess Functionality</CodeItemTitle>
                 <CodeItemWrapper >
-                    <CodeItem src={searchscreen}/>
-                    <CodeItem src={searchcode}/>
+                    <CodeItem src={showmore}/>
+                    <CodeItem src={code01}/>
+                    <CodeItem src={code02}/>
                 </CodeItemWrapper>
 
 

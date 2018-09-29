@@ -10,7 +10,7 @@ class Showcode extends Component{
         return(
 
             <CodeWrapper bg={bgimg}>
-                <Codetitle>Show Code</Codetitle>
+                <Codetitle>Coding Tutorial</Codetitle>
                 <CodeItemTitle>Search Bar Functionality</CodeItemTitle>
                 <CodeItemWrapper>
                     <CodeItem src={searchscreen}/>

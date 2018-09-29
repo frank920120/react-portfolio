@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import '../../style';
+import '../../../../style';
 
 export const FooterWrapper = styled.footer`
   font-family:'Poppins','Helvetica',sans-serif;
@@ -55,6 +55,7 @@ align-items:center;
 `
 export const SocialMediaItemLink = styled.a`
 display:block;
+
 `
 export const SocialMediaItem = styled.img`
 width:30px;

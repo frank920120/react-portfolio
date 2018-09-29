@@ -32,7 +32,7 @@ class ProjectSection  extends Component{
                 'ReactJS | Styled-components | Photoshop |'
         
         ],
-        url:['/countrypj','/tspace','/Weather','/'],
+        url:['/countrypj','/tspace','/Weather','/myportfolio'],
         limit:2,
         maxiumLimit:false
         }
@@ -43,43 +43,27 @@ class ProjectSection  extends Component{
     ShowHandle(){
 
         this.setState((prevState)=>{
-          
           return {limit :prevState.limit+2}
-          
         },()=>{
-
             if(this.state.limit>=4){
-
                 this.setState({
-  
                  maxiumLimit:true
-  
-                })
+             })
           }
         })
-
     }
     LessHandle(){
-
-
         this.setState((prevState)=>{
-
-
             return {limit :prevState.limit-2}
-
-
         },()=>{
             window.scrollTo(0,window.scrollY-600);
             if(this.state.limit<=2){
             this.setState({
                 limit:2,
-                maxiumLimit:false
-                
+                maxiumLimit:false   
                })
             }
         })
-
-
     }
     handleHover(i){
         const items =[...this.state.isHover];
@@ -115,7 +99,6 @@ class ProjectSection  extends Component{
                 {
                         this.state.imgUrl.slice(0,this.state.limit).map((item,index)=>{
 
-
                         return   ( 
                         
                             <Fade key={index}  left>
@@ -126,22 +109,15 @@ class ProjectSection  extends Component{
                                     <ProjectTitle>{this.state.projectTitle[index]}</ProjectTitle>
                                     <ProjectIntro>{this.state.projectIntro[index]}</ProjectIntro>
                                     <ProjectSkill>{this.state.ProjectSkill[index]}</ProjectSkill>
-
                                     <ProjectButton to={this.state.url[index]}>View Detail</ProjectButton>
-                                  
-                                   
                                 </ImgCover>
                         </ProjectItems>
                         </Fade>
-                        )
-                                
-
+                        )                               
                         })
-                    }
-                
+                    }               
                 </ProjectContent>
                 <ShowMore onClick={this.state.maxiumLimit?this.LessHandle:this.ShowHandle}>{this.state.maxiumLimit?'ShowLess':'ShowMore'}</ShowMore>
-
                 <Redline></Redline>
              </ProjectWrapper>
 

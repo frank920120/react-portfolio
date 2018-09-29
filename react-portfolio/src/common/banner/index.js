@@ -10,7 +10,7 @@ class HomeBanner  extends Component{
 constructor(props){
 super(props);
 this.state={
-url:{link:['www.google.ca','www.amazon.com','www.facebook.com'],
+url:{link:['mailto:hello@frankjunfang.com','https://github.com/frank920120','https://www.linkedin.com/in/jun-fang-945397167/'],
 socialicon:[EmailIcon,GitIcon,Linkin]},
 scroll :false,
 // load:false

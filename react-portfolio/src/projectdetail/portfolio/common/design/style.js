@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import '../../../../style';
 
+
 export const DesignSectionWrapper = styled.div`
 
 font-family: "Lora",serif,serif;
@@ -13,6 +14,7 @@ text-align:center;
 font-size:40px;
 color:#404040;
 margin:0;
+margin-top:60px;
 padding-top:60px;
 padding-bottom:60px;
 @media(max-width:820px){

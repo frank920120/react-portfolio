@@ -6,15 +6,16 @@ import {BrowserRouter,Route} from 'react-router-dom';
 import Tspace from './projectdetail/tspace';
 import ChinaPJ from './projectdetail/countrypj';
 import Weather from './projectdetail/weather';
-
+import MyPortfolio from './projectdetail/portfolio';
 
 ReactDOM.render(
 <BrowserRouter>
     <div>
     <Route  exact path="/" component={App}/>
-    <Route onUpdate={() => window.scrollTo(0, 0)} path="/tspace" component={Tspace}/>
-    <Route onUpdate={() => window.scrollTo(0, 0)} path="/countrypj" component={ChinaPJ}/>
-    <Route onUpdate={() => window.scrollTo(0, 0)} path="/Weather" component={Weather}/>
+    <Route  path="/tspace" component={Tspace}/>
+    <Route  path="/countrypj" component={ChinaPJ}/>
+    <Route  path="/Weather" component={Weather}/>
+    <Route  path="/myportfolio" component={MyPortfolio}/>
     </div>
 </BrowserRouter>
 , document.getElementById('root'));
