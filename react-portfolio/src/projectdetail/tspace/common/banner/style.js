@@ -198,6 +198,7 @@ export const BannerButton= styled.a`
     font-family: 'Poppins','Helvetica',sans-serif;
     font-weight:200;
     color:#404040;
+    text-decoration:none;
 
 @media(max-width:820px){
 

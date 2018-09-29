@@ -69,7 +69,7 @@ class TspaceBanner extends Component{
 
                             }
                     </ToolListUL>
-                    <BannerButton>Watch live Demo</BannerButton>
+                    <BannerButton href='https://frankjunfang.com/countrypj'>Watch live Demo</BannerButton>
                 </ToolDiv>
             </DescribeDiv>
             </BannerWrapper>

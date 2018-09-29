@@ -68,7 +68,7 @@ class WeatherBanner extends Component{
 
                             }
                     </ToolListUL>
-                    <BannerButton>Watch live Demo</BannerButton>
+                    <BannerButton href='https://frankjunfang.com/weatherpj/'>Watch live Demo</BannerButton>
                 </ToolDiv>
             </DescribeDiv>
             </BannerWrapper>

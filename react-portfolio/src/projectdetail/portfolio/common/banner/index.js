@@ -68,7 +68,7 @@ class PortfolioBanner extends Component{
 
                             }
                     </ToolListUL>
-                    <BannerButton>Watch live Demo</BannerButton>
+                    <BannerButton href='https://frankjunfang.com'>Watch live Demo</BannerButton>
                 </ToolDiv>
             </DescribeDiv>
             </BannerWrapper>
