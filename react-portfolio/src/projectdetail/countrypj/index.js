@@ -7,7 +7,12 @@ import DesignSection from './common/design';
 import Showcode from './common/showcode';
 import Footer from './common/footer';
 class ChinaPJ extends Component{
+  componentDidMount(){
 
+    window.scrollTo(0,0);
+
+
+  }
     render(){
 
         return(

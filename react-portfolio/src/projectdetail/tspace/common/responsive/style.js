@@ -16,10 +16,15 @@ margin:0;
 font-family:'Poppins','Helvetica',sans-serif;
 font-size:40px;
 color:#404040;
-text-decoration: underline;
-padding:30px;
+padding-top:60px;
+padding-bottom:60px;
 text-align:center;
 width:100%;
+
+   @media(max-width:820px){
+font-size:25px
+}
+
 `
 
 
@@ -36,7 +41,6 @@ display:block;
 object-fit:contain;
 margin:0 auto;
 max-width:100%;
-padding:30px;
     &.iphoneview{
         
         grid-column:1/2;

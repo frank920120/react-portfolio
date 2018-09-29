@@ -1,23 +1,22 @@
 import React, { Component} from 'react';
-import TspaceBannerImg from '../../statics/tspaceBanner.jpg'
+import Banner from '../../statics/weatherBanner.jpg';
 import {BannerImage,DescribeDiv,BannerWrapper,DesHeader,DesDiv,DesContent,DesSkillUl,DesItem,
     ToolDiv,ToolListUL,ToolListItem,ToolListImg,ToolTitle,BannerButton} from './style';
 import html from '../../statics/html.svg';
-import js from '../../statics/javascript.svg';
-import php from '../../statics/php.svg';
+import angular from '../../statics/angular.svg';
 import css from '../../statics/css.svg';
-import mysql from '../../statics/mysql.svg';
 
 
-class TspaceBanner extends Component{
+
+class WeatherBanner extends Component{
     constructor(props){
         super(props);
         this.state = {
-            title:'T-Space',
-            skill:['RESPONSIVE','WEB DESIGN','WEB DEVELOPMENT'],
-            des:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            title:'Weather Forecast',
+            skill:['SINGLE PAGE','WEB DESIGN','WEB DEVELOPMENT'],
+            des:"This Weather application is a simple web application that displays the weather report of numerous cities in the world.",
             tooltitle:'TOOLKIT',
-            toollist:[html,css,js,php,mysql]
+            toollist:[html,css,angular]
         }
                 
 
@@ -27,7 +26,7 @@ class TspaceBanner extends Component{
 
         return(
             <BannerWrapper>
-            <BannerImage src={TspaceBannerImg}/>
+            <BannerImage src={Banner}/>
             <DescribeDiv>
                 <DesHeader>{this.state.title}</DesHeader>
                 <DesDiv>
@@ -85,4 +84,4 @@ class TspaceBanner extends Component{
 }
 
 
-export default TspaceBanner;
+export default WeatherBanner;

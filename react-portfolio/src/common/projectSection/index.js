@@ -8,7 +8,7 @@ import tspace from '../../statics/tspace.png';
 import weather from '../../statics/weather.png';
 import currentportoflio from '../../statics/currentportfolio.png';
 import Fade from 'react-reveal/Fade';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 
 
 class ProjectSection  extends Component{
@@ -32,7 +32,7 @@ class ProjectSection  extends Component{
                 'ReactJS | Styled-components | Photoshop |'
         
         ],
-        url:['/countrypj','/tspace','/','/'],
+        url:['/countrypj','/tspace','/Weather','/'],
         limit:2,
         maxiumLimit:false
         }
@@ -127,7 +127,7 @@ class ProjectSection  extends Component{
                                     <ProjectIntro>{this.state.projectIntro[index]}</ProjectIntro>
                                     <ProjectSkill>{this.state.ProjectSkill[index]}</ProjectSkill>
 
-                                    <ProjectButton to={this.state.url[index]}>Show More</ProjectButton>
+                                    <ProjectButton to={this.state.url[index]}>View Detail</ProjectButton>
                                   
                                    
                                 </ImgCover>

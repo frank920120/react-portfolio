@@ -1,5 +1,5 @@
 import React, { Component,Fragment } from 'react';
-import {HeaderWrapper,HomeNav,NavIcon,MenuWrapper} from './style';
+import {HomeNav,NavIcon,MenuWrapper} from './style';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 // import HamburgerMenu from '../../../../statics/hamburger.svg';
 class Header extends Component{

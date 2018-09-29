@@ -1,9 +1,9 @@
-import React, { Component,Fragment} from 'react';
+import React, { Component} from 'react';
 import CountryBannerImg from '../../statics/countryBanner.jpg'
 import {BannerImage,DescribeDiv,BannerWrapper,DesHeader,DesDiv,DesContent,DesSkillUl,DesItem,
     ToolDiv,ToolListUL,ToolListItem,ToolListImg,ToolTitle,BannerButton} from './style';
 import html from '../../statics/html.svg';
-import js from '../../statics/javascript.png';
+import js from '../../statics/javascript.svg';
 import css from '../../statics/css.svg';
 import ps from '../../statics/photoshop.svg'
 
@@ -15,7 +15,7 @@ class TspaceBanner extends Component{
         this.state = {
             title:'COUNTRY PROJECT',
             skill:['RESPONSIVE','WEB DESIGN','WEB DEVELOPMENT'],
-            des:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            des:"This is my first project in BCIT,China is a fully responsive website for introducing China. The objective of this website project is to deliver general information about China with an eye-catching design. The theme, color, and design of the website are inspired by the traditional China mood.",
             tooltitle:'TOOLKIT',
             toollist:[html,css,js,ps]
         }

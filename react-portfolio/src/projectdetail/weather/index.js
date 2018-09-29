@@ -1,12 +1,9 @@
 import React, { Component,Fragment } from 'react';
 import Header from './common/header';
-import Banner from '../tspace/common/banner';
-import ResponsiveSection from './common/responsive';
-import ColorScheme from './common/colorscheme';
+import WeatherBanner from '../weather/common/banner';
 import DesignSection from './common/design';
-import Showcode from './common/showcode';
 import Footer from './common/footer';
-class Tspace extends Component{
+class Weather extends Component{
     componentDidMount(){
 
         window.scrollTo(0,0);
@@ -19,11 +16,8 @@ class Tspace extends Component{
 
         <Fragment>
             <Header/>
-            <Banner/>
-            <ResponsiveSection/>
-            <ColorScheme/>
+            <WeatherBanner/>
             <DesignSection/>
-            <Showcode/>
             <Footer/>
         </Fragment>
     
@@ -34,7 +28,7 @@ class Tspace extends Component{
 
     }
 }
-export default Tspace;
+export default Weather;
 
 
 
