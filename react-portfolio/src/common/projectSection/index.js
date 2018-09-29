@@ -32,7 +32,7 @@ class ProjectSection  extends Component{
                 'ReactJS | Styled-components | Photoshop |'
         
         ],
-        url:['/countrypj','/tspace','/Weather','/myportfolio'],
+        url:['/countrydetail','/tspacedetail','/weatherdetail','/myportfoliodetail'],
         limit:2,
         maxiumLimit:false
         }

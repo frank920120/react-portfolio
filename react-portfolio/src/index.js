@@ -12,10 +12,10 @@ ReactDOM.render(
 <BrowserRouter>
     <div>
     <Route  exact path="/" component={App}/>
-    <Route  path="/tspace" component={Tspace}/>
-    <Route  path="/countrypj" component={ChinaPJ}/>
-    <Route  path="/Weather" component={Weather}/>
-    <Route  path="/myportfolio" component={MyPortfolio}/>
+    <Route  path="/tspacedetail" component={Tspace}/>
+    <Route  path="/countrydetail" component={ChinaPJ}/>
+    <Route  path="/weatherdetail" component={Weather}/>
+    <Route  path="/myportfoliodetail" component={MyPortfolio}/>
     </div>
 </BrowserRouter>
 , document.getElementById('root'));

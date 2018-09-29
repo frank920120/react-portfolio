@@ -124,7 +124,7 @@ padding-bottom:100px;
 @media (max-width:500px){
     margin-top:20px;
     width:100%;
-    grid-gap:10px;
+    grid-gap:0px;
 
 }
 `
@@ -162,16 +162,16 @@ display:block;
     z-index:1;
     opacity:0;
     transition:0.5s linear;
-    @media (max-width:500px){
+    /* @media (max-width:500px){
     opacity:0.8;
-}
+} */
   
 &.cover {
 
    opacity:1;
-   @media (max-width:500px){
+   /* @media (max-width:500px){
     opacity:0.8;
-}
+} */
 
 }
 `

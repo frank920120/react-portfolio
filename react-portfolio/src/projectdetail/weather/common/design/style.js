@@ -33,5 +33,7 @@ export const DesginImg=styled.img`
 object-fit:contain;
 padding:30px;
 max-width:100%;
-
+@media(max-width:500px){
+padding:0;
+}
 `
