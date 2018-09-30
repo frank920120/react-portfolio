@@ -16,23 +16,24 @@ class ProjectSection  extends Component{
     constructor(props){
         super(props);
         this.state = {
-            imgUrl :[china,tspace,weather,currentportoflio],
+            imgUrl :[china,tspace,currentportoflio,weather],
             isHover : [false,false,false,false],
-            projectTitle : ['Country Project','Virtual Business Project','Weather forecast','Current portfolio'],
+            projectTitle : ['Country Project','Virtual Business Project','Current portfolio','Weather forecast'],
             projectIntro : [
                 'China is a single page, responsive website for introducing China. ',
                 'T-space is a Virtual Business page. ',
-                'The weather forecast is a single Angular page', 
-                'This is my current portfolio page which includes all my projects that I have done so far.'
+                'This is my current portfolio page which includes all my projects that I have done so far.',
+                'The weather forecast is a single Angular page'
                 ],
             ProjectSkill:[
                 'Html | Scss | Javascript | Jquery | Responsive',
                 'Html | Scss | Javascript | Jquery | Php | Mysql | Photoshop | XD | Responsive',
-                'Angular | Angular Router | Ajax | OpenWeatherMap API | CSS3 | Responsive',
-                'ReactJS | Styled-components | Photoshop |'
+                'ReactJS | Styled-components | Photoshop | React-Router 4',
+                'Angular | Angular Router | Ajax | OpenWeatherMap API | CSS3 | Responsive'
+                
         
         ],
-        url:['/countrydetail','/tspacedetail','/weatherdetail','/myportfoliodetail'],
+        url:['/countrydetail','/tspacedetail','/myportfoliodetail','/weatherdetail'],
         limit:2,
         maxiumLimit:false
         }
