@@ -8,7 +8,9 @@ background-image:url(${props=>props.bg});
 background-repeat:none;
 background-size:cover;
 background-attachment:fixed;
-
+@media(max-width:500px){
+background-attachment:local;
+}
 `
 
 export const Codetitle=styled.h1`
@@ -53,7 +55,7 @@ export const CodeItem=styled.img`
 padding:20px;
 display:block;
 object-fit:contain;
-max-width:100%;
+max-width:90%;
 
 
 `

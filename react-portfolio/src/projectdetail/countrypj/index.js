@@ -6,6 +6,7 @@ import ColorScheme from './common/colorscheme';
 import DesignSection from './common/design';
 import Showcode from './common/showcode';
 import Footer from './common/footer';
+import Wireframe from './common/wireframe';
 class ChinaPJ extends Component{
   componentDidMount(){
 
@@ -24,6 +25,7 @@ class ChinaPJ extends Component{
             <ColorScheme/>
             <DesignSection/>
             <Showcode/>
+            <Wireframe/>
             <Footer/>
         </Fragment>
     
