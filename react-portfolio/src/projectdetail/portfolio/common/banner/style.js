@@ -48,6 +48,10 @@ export const DesHeader = styled.h1`
 font-size:50px;
 text-align:center;
 }
+@media (max-width:500px){
+    padding-top:30px;
+        
+}
 
 
 `

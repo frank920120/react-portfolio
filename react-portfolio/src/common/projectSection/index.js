@@ -7,6 +7,7 @@ import china from '../../statics/china.png';
 import tspace from '../../statics/tspace.png';
 import weather from '../../statics/weather.png';
 import currentportoflio from '../../statics/currentportfolio.png';
+import merryme from '../../statics/merryme.png';
 import Fade from 'react-reveal/Fade';
 // import {Link} from 'react-router-dom';
 
@@ -16,24 +17,29 @@ class ProjectSection  extends Component{
     constructor(props){
         super(props);
         this.state = {
-            imgUrl :[china,tspace,currentportoflio,weather],
-            isHover : [false,false,false,false],
-            projectTitle : ['Country Project','Virtual Business Project','Current portfolio','Weather forecast'],
+            imgUrl :[china,tspace,currentportoflio,merryme,weather],
+            available:[true,true,true,false,true],
+            isHover : [false,false,false,false,false],
+            projectTitle : ['Country Project','Virtual Business Project','Current portfolio','MerryMe Wedding','Weather forecast'],
             projectIntro : [
-                'China is a single page, responsive website for introducing China. ',
-                'T-space is a Virtual Business page. ',
+                'China is a single page website, responsive website for introducing China. ',
+                'T-space is a fictional Business website. ',
                 'This is my current portfolio page which includes all my projects that I have done so far.',
+                'This is a real Client Wordpress Project,it will be launched by the end of Oct 2018',
                 'The weather forecast is a single Angular page'
+              
                 ],
             ProjectSkill:[
-                'Html | Scss | Javascript | Jquery | Responsive',
-                'Html | Scss | Javascript | Jquery | Php | Mysql | Photoshop | XD | Responsive',
-                'ReactJS | Styled-components | Photoshop | React-Router 4',
+                'HTML | SASS | Javascript | Jquery | Responsive',
+                'HTML | SASS | Javascript | Jquery | PHP | Mysql | Photoshop | XD | Responsive',
+                'ReactJS | Styled-components | Photoshop | React-Router 4 | Respnsive',
+                'HTML | SASS | Javascript | Wordpress | XD | Photoshop | Responsive',
                 'Angular | Angular Router | Ajax | OpenWeatherMap API | CSS3 | Responsive'
+                
                 
         
         ],
-        url:['/countrydetail','/tspacedetail','/myportfoliodetail','/weatherdetail'],
+        url:['/countrydetail','/tspacedetail','/myportfoliodetail','/','/weatherdetail'],
         limit:2,
         maxiumLimit:false
         }
@@ -46,7 +52,7 @@ class ProjectSection  extends Component{
         this.setState((prevState)=>{
           return {limit :prevState.limit+2}
         },()=>{
-            if(this.state.limit>=4){
+            if(this.state.limit>=5){
                 this.setState({
                  maxiumLimit:true
              })
@@ -110,7 +116,7 @@ class ProjectSection  extends Component{
                                     <ProjectTitle>{this.state.projectTitle[index]}</ProjectTitle>
                                     <ProjectIntro>{this.state.projectIntro[index]}</ProjectIntro>
                                     <ProjectSkill>{this.state.ProjectSkill[index]}</ProjectSkill>
-                                    <ProjectButton to={this.state.url[index]}>View Detail</ProjectButton>
+                                    <ProjectButton to={this.state.url[index]}>{this.state.available[index]?'View Detail':'Not Available'}</ProjectButton>
                                 </ImgCover>
                         </ProjectItems>
                         </Fade>

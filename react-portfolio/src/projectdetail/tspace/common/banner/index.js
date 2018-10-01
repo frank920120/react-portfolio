@@ -15,7 +15,7 @@ class TspaceBanner extends Component{
         this.state = {
             title:'T-Space',
             skill:['RESPONSIVE','WEB DESIGN','WEB DEVELOPMENT'],
-            des:"First group project in BCIT, worked on this project with one of my classmates.T-Space is a fictional Business Store, sells the virtual products on the Web such as headphones, watches and also glasses.",
+            des:"First group project in BCIT, collaborated as a team to produce  a fictional e-commerce Store, sells the virtual products on the Web such as headphones, watches and also glasses.",
             tooltitle:'TOOLKIT',
             toollist:[html,css,js,php,mysql]
         }
