@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {FooterWrapper,ContactWrapper,ContactInfo,SocialMediaWrapper,SocialMediaItem,SocialMediaItemLink,TextSpan} from './style';
+import {FooterWrapper,ContactWrapper,ContactInfo,SocialMediaWrapper,SocialMediaItem,SocialMediaItemLink,TextSpan,Copyright} from './style';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import EmailIcon from '../../statics/email.svg';
 import GitIcon from '../../statics/github-logo.svg';
@@ -40,6 +40,8 @@ class Footer extends Component{
                    }
                     
                         </SocialMediaWrapper>
+                        <Copyright>@2018 Developed and designed by JUN FANG</Copyright>  
+                        
                 </FooterWrapper>
                
             

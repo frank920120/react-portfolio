@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {FooterWrapper,ContactWrapper,ContactInfo,SocialMediaWrapper,SocialMediaItem,SocialMediaItemLink,TextSpan} from './style';
+import {FooterWrapper,ContactWrapper,ContactInfo,SocialMediaWrapper,SocialMediaItem,SocialMediaItemLink,TextSpan,Copyright} from './style';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import EmailIcon from '../../../../statics/email.svg';
 import GitIcon from '../../../../statics/github-logo.svg';
@@ -25,7 +25,8 @@ class Footer extends Component{
                         <ContactInfo className='ContactHeader'>Contact Me:</ContactInfo>
                             <ContactInfo><i className="fas fa-mobile-alt"></i>  Mobile:<TextSpan> 1-778-926-8636</TextSpan></ContactInfo>
                             <ContactInfo><i className="fab fa-weixin"></i> Wechat:<TextSpan> hainan42</TextSpan></ContactInfo>
-                            <ContactInfo><i className="far fa-envelope"></i>  Email:<TextSpan> hello@frankjunfang.com</TextSpan></ContactInfo>    
+                            <ContactInfo><i className="far fa-envelope"></i>  Email:<TextSpan> hello@frankjunfang.com</TextSpan></ContactInfo>  
+
                         </ContactWrapper>
                     <SocialMediaWrapper>
                     {
@@ -40,6 +41,7 @@ class Footer extends Component{
                    }
                     
                         </SocialMediaWrapper>
+                        <Copyright>@2018 Developed and designed by JUN FANG</Copyright>  
                 </FooterWrapper>
                
             

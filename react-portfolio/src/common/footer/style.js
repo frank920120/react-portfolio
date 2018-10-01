@@ -4,10 +4,11 @@ import '../../style';
 export const FooterWrapper = styled.footer`
   font-family:'Poppins','Helvetica',sans-serif;
 background:#151515;
-height:300px;
+height:350px;
 width:100%;
 display:flex;
 justify-content:space-around;
+position:relative;
 @media (max-width:600px){
   flex-direction:column;
   align-items:center;
@@ -55,6 +56,7 @@ align-items:center;
 `
 export const SocialMediaItemLink = styled.a`
 display:block;
+
 `
 export const SocialMediaItem = styled.img`
 width:30px;
@@ -75,4 +77,19 @@ export const TextSpan =styled.span`
 font-size:15px;
 font-weight:400;
 
+`
+
+export const Copyright = styled.h3`
+position:absolute;
+transform:translate(-50%,-50%);
+bottom:0;
+left:50%;
+font-size:10px;
+text-align:center;
+color:white;
+@media (max-width:600px){
+  width:100%;
+ position:relative;
+ 
+}
 `
