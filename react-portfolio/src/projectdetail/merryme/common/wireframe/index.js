@@ -12,7 +12,6 @@ import wireframe09 from '../../statics/merrymewireframe09.png';
 import wireframe10 from '../../statics/merrymewireframe10.jpeg';
 import wireframe11 from '../../statics/merrymewireframe11.jpeg';
 import wireframe12 from '../../statics/merrymewireframe12.jpeg';
-import wireframe13 from '../../statics/merrymewireframe13.jpeg';
 class Wireframe extends Component{
 
 
@@ -36,7 +35,6 @@ class Wireframe extends Component{
                     <WireFrameItem src={wireframe10}/>
                     <WireFrameItem src={wireframe11}/>
                     <WireFrameItem src={wireframe12}/>
-                    <WireFrameItem src={wireframe13}/>
             </WireFrameItemWrapper>
 
             </WireFrameWrapper>
