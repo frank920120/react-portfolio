@@ -58,7 +58,7 @@ componentDidMount() {
 
                     </BannerHead>
                     </Fade>
-                    <BannerText> <Fade left cascade>HTML5 | CSS3 | JavaScript | ReactJS,Redux,styled-components | WordPress | PHP | MySQL | Git | Balsamiq | InVision | Photoshop</Fade>
+                    <BannerText> <Fade left cascade>HTML5 | CSS3 | JavaScript | ReactJS, Redux, styled-components | WordPress | PHP | MySQL | Git | Balsamiq | InVision | Photoshop</Fade>
                     <Redline></Redline>
                     </BannerText>
                 </BannerSection>

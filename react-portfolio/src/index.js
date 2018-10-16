@@ -7,6 +7,7 @@ import Tspace from './projectdetail/tspace';
 import ChinaPJ from './projectdetail/countrypj';
 import Weather from './projectdetail/weather';
 import MyPortfolio from './projectdetail/portfolio';
+import Merryme from './projectdetail/merryme';
 
 ReactDOM.render(
 <HashRouter>
@@ -16,6 +17,7 @@ ReactDOM.render(
     <Route  path="/countrydetail" component={ChinaPJ}/>
     <Route  path="/weatherdetail" component={Weather}/>
     <Route  path="/myportfoliodetail" component={MyPortfolio}/>
+    <Route path="/merryme" component={Merryme}/>
     </div>
 </HashRouter>
 , document.getElementById('root'));

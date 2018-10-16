@@ -17,29 +17,29 @@ class ProjectSection  extends Component{
     constructor(props){
         super(props);
         this.state = {
-            imgUrl :[china,tspace,currentportoflio,merryme,weather],
-            available:[true,true,true,false,true],
+            imgUrl :[merryme,tspace,currentportoflio,china,weather],
+            available:[true,true,true,true,true],
             isHover : [false,false,false,false,false],
-            projectTitle : ['Country Project','Virtual Business Project','Current portfolio','MerryMe Wedding','Weather forecast'],
+            projectTitle : ['MerryMe Wedding','Virtual Business Project','Current portfolio',,'Country Project','Weather forecast'],
             projectIntro : [
-                'China is a single page website, responsive website for introducing China. ',
+                'This is a real Client Wordpress Project,it will be launched by the end of Oct 2018',
                 'T-space is a fictional Business website. ',
                 'This is my current portfolio page which includes all my projects that I have done so far.',
-                'This is a real Client Wordpress Project,it will be launched by the end of Oct 2018',
+                'China is a single page website, responsive website for introducing China. ',
                 'The weather forecast is a single Angular page'
               
                 ],
             ProjectSkill:[
-                'HTML | SASS | Javascript | Jquery | Responsive',
+                'HTML | SASS | Javascript | Wordpress | XD | Photoshop | Responsive',
                 'HTML | SASS | Javascript | Jquery | PHP | Mysql | Photoshop | XD | Responsive',
                 'ReactJS | Styled-components | Photoshop | React-Router 4 | Respnsive',
-                'HTML | SASS | Javascript | Wordpress | XD | Photoshop | Responsive',
+                'HTML | SASS | Javascript | Jquery | Responsive',
                 'Angular | Angular Router | Ajax | OpenWeatherMap API | CSS3 | Responsive'
                 
                 
         
         ],
-        url:['/countrydetail','/tspacedetail','/myportfoliodetail','/','/weatherdetail'],
+        url:['/merryme','/tspacedetail','/myportfoliodetail','/countrydetail','/weatherdetail'],
         limit:2,
         maxiumLimit:false
         }
