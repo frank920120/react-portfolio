@@ -1,23 +1,22 @@
 import React, { Component} from 'react';
-import {DescribeDiv,BannerWrapper,DesHeader,DesDiv,DesContent,DesSkillUl,DesItem,
+import Banner from '../../statics/youtubebanner.png';
+import {BannerImage,DescribeDiv,BannerWrapper,DesHeader,DesDiv,DesContent,DesSkillUl,DesItem,
     ToolDiv,ToolListUL,ToolListItem,ToolListImg,ToolTitle,BannerButton} from './style';
 import html from '../../statics/html.svg';
-import js from '../../statics/javascript.svg';
-import ps from '../../statics/photoshop.svg';
-import sass from '../../statics/sass.svg';
-import wordpress from '../../statics/wordpress.svg';
+import react from '../../statics/react.svg';
+import css from '../../statics/css.svg';
 
 
 
-class MerrymeBanner extends Component{
+class YoutubeBanner extends Component{
     constructor(props){
         super(props);
         this.state = {
-            title:'MerryMe Wedding',
-            skill:['RESPONSIVE','WEB DESIGN','WEB DEVELOPMENT'],
-            des:"This is my first real client project in BCIT, liaised with clients of small to mid-size businesses including face-to-face meetings to identify needs and requirements in order to create innovative and targeted designs. Utilized well-developed listening skills to ensure the accuracy of communication. .",
+            title:'Youtube Data API',
+            skill:['SINGLE PAGE','WEB DESIGN','WEB DEVELOPMENT'],
+            des:"This Youtube application is a simple web application that displays the youtube videos from using Youtube Data API.",
             tooltitle:'TOOLKIT',
-            toollist:[html,sass,js,wordpress,ps]
+            toollist:[html,css,react]
         }
                 
 
@@ -27,6 +26,7 @@ class MerrymeBanner extends Component{
 
         return(
             <BannerWrapper>
+            <BannerImage src={Banner}/>
             <DescribeDiv>
                 <DesHeader>{this.state.title}</DesHeader>
                 <DesDiv>
@@ -68,7 +68,7 @@ class MerrymeBanner extends Component{
 
                             }
                     </ToolListUL>
-                    <BannerButton href='http://merrymewedding.com'>Watch live Demo</BannerButton>
+                    <BannerButton href='https://frankjunfang.com/youtubepj/'>Watch live Demo</BannerButton>
                 </ToolDiv>
             </DescribeDiv>
             </BannerWrapper>
@@ -84,4 +84,4 @@ class MerrymeBanner extends Component{
 }
 
 
-export default MerrymeBanner;
+export default YoutubeBanner;

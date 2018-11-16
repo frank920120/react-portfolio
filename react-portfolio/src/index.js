@@ -8,6 +8,7 @@ import ChinaPJ from './projectdetail/countrypj';
 import Weather from './projectdetail/weather';
 import MyPortfolio from './projectdetail/portfolio';
 import Merryme from './projectdetail/merryme';
+import YoutubePJ from './projectdetail/youtubepj';
 
 ReactDOM.render(
 <HashRouter>
@@ -15,6 +16,7 @@ ReactDOM.render(
     <Route  exact path="/" component={App}/>
     <Route  path="/tspacedetail" component={Tspace}/>
     <Route  path="/countrydetail" component={ChinaPJ}/>
+    <Route  path="/youtubedetail" component={YoutubePJ}/>
     <Route  path="/weatherdetail" component={Weather}/>
     <Route  path="/myportfoliodetail" component={MyPortfolio}/>
     <Route path="/merryme" component={Merryme}/>

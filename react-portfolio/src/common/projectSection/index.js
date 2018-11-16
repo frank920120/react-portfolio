@@ -9,6 +9,7 @@ import weather from '../../statics/weather.png';
 import currentportoflio from '../../statics/currentportfolio.png';
 import merryme from '../../statics/merryme.png';
 import Fade from 'react-reveal/Fade';
+import youtube from '../../statics/youtube.png';
 // import {Link} from 'react-router-dom';
 
 
@@ -17,14 +18,15 @@ class ProjectSection  extends Component{
     constructor(props){
         super(props);
         this.state = {
-            imgUrl :[merryme,tspace,currentportoflio,china,weather],
-            available:[true,true,true,true,true],
+            imgUrl :[merryme,tspace,currentportoflio,youtube,china,weather],
+            available:[true,true,true,true,true,true],
             isHover : [false,false,false,false,false],
-            projectTitle : ['MerryMe Wedding','Virtual Business Project','Current portfolio',,'Country Project','Weather forecast'],
+            projectTitle : ['MerryMe Wedding','Virtual Business Project','Current portfolio','React Youtube API','Country Project','Weather forecast'],
             projectIntro : [
-                'This is a real Client Wordpress Project,it will be launched by the end of Oct 2018',
+                'This is a real Client Wordpress Project about Wedding services',
                 'T-space is a fictional Business website. ',
                 'This is my current portfolio page which includes all my projects that I have done so far.',
+                'This is a single page webiste using Reactjs to fetch the API from youtube .',
                 'China is a single page website, responsive website for introducing China. ',
                 'The weather forecast is a single Angular page'
               
@@ -33,13 +35,14 @@ class ProjectSection  extends Component{
                 'HTML | SASS | Javascript | Wordpress | XD | Photoshop | Responsive',
                 'HTML | SASS | Javascript | Jquery | PHP | Mysql | Photoshop | XD | Responsive',
                 'ReactJS | Styled-components | Photoshop | React-Router 4 | Respnsive',
+                'ReactJS | CSS | Youtube Data API | Bootstrap',
                 'HTML | SASS | Javascript | Jquery | Responsive',
                 'Angular | Angular Router | Ajax | OpenWeatherMap API | CSS3 | Responsive'
                 
                 
         
         ],
-        url:['/merryme','/tspacedetail','/myportfoliodetail','/countrydetail','/weatherdetail'],
+        url:['/merryme','/tspacedetail','/myportfoliodetail','/youtubedetail','/countrydetail','/weatherdetail'],
         limit:2,
         maxiumLimit:false
         }

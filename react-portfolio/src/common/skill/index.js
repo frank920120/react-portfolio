@@ -12,7 +12,7 @@ class MySkill extends Component{
         super(props);
         this.state = {
             logo :[designLogo,codeLogo],
-            title:['Desiger','Front-end Developer'],
+            title:['Designer','Front-end Developer'],
             self : ['I value simple content structure, clean design patterns, and thoughtful interactions.','I tend to code things from scratch, and enjoy bringing ideas to life in the browser.'],
             subtitle:['Things I enjoy designing:','Languages I speak:'],
             skill:['UI, UX, Web, App','HTML, Css, Reactjs, Redux, Javascript, Jquery, Sass, PHP, WordPress'],

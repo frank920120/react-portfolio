@@ -1,7 +1,6 @@
 import React, { Component,Fragment } from 'react';
 import {HomeNav,NavIcon,MenuWrapper} from './style';
 
-// import HamburgerMenu from '../../../../statics/hamburger.svg';
 class Header extends Component{
 
 
@@ -11,7 +10,7 @@ class Header extends Component{
                     <HomeNav>
                         <NavIcon>JUN FANG</NavIcon>
                         <MenuWrapper>
-                            <a href='http://merrymewedding.com' className='Highlight'>Watch Live Demo</a>
+                            <a href='https://frankjunfang.com/youtubepj/' className='Highlight'>Watch Live Demo</a>
                         </MenuWrapper>
                 
                     </HomeNav>

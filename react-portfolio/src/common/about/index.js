@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import {AboutWrapper,AboutHeadWrapper,AboutHead,AboutText,
     AboutContent,AboutLeft,AboutRight,AboutIntro,Highlight,Redline} from './style';
-import Selfi from '../../statics/selfi.jpg';
+import Selfi from '../../statics/selfi.png';
 class AboutMe extends Component {
 
     constructor(props){
